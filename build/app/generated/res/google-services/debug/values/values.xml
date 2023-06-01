@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">197301264686-1kdg1lq6lihohjmqhlvgoovuc2sbsa98.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">197301264686</string>
+    <string name="google_api_key" translatable="false">AIzaSyBohvg9D3ek6WKSDt0wFIyKkMuqDdfBsmU</string>
+    <string name="google_app_id" translatable="false">1:197301264686:android:9ae899cf08ce6483809abf</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBohvg9D3ek6WKSDt0wFIyKkMuqDdfBsmU</string>
+    <string name="google_storage_bucket" translatable="false">fir-chatapp-2a4c6.appspot.com</string>
+    <string name="project_id" translatable="false">fir-chatapp-2a4c6</string>
+</resources>
