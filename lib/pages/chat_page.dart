@@ -47,6 +47,7 @@ class _ChatPageState extends State<ChatPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const  Color(0xff282B30),
       appBar: AppBar(
         centerTitle: true,
         elevation: 0,
@@ -74,16 +75,16 @@ class _ChatPageState extends State<ChatPage> {
             alignment: Alignment.bottomCenter,
             width: MediaQuery.of(context).size.width,
             child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               width: MediaQuery.of(context).size.width,
-              color: Colors.grey[700],
+              color: const Color.fromARGB(255, 52, 56, 63),
               child: Row(children: [
                 Expanded(
                     child: TextFormField(
                   controller: messageController,
                   style: const TextStyle(color: Colors.white),
                   decoration: const InputDecoration(
-                    hintText: "Send a message...",
+                    hintText: "Send for a traveler...",
                     hintStyle: TextStyle(color: Colors.white, fontSize: 16),
                     border: InputBorder.none,
                   ),

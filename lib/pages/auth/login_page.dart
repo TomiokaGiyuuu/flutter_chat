@@ -1,7 +1,6 @@
 import 'package:chatapp_firebase/helper/helper_function.dart';
 import 'package:chatapp_firebase/pages/auth/register_page.dart';
 import 'package:chatapp_firebase/pages/home_page.dart';
-import 'package:chatapp_firebase/provider/google_sign_in.dart';
 import 'package:chatapp_firebase/service/auth_service.dart';
 import 'package:chatapp_firebase/service/database_service.dart';
 import 'package:chatapp_firebase/widgets/widgets.dart';
@@ -9,8 +8,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:provider/provider.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -117,22 +114,6 @@ class _LoginPageState extends State<LoginPage> {
                               login();
                             },
                           ),
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        ElevatedButton.icon(
-                          style: ElevatedButton.styleFrom(
-                            primary: Colors.white,
-                            onPrimary: Colors.white,
-                            minimumSize: Size(double.infinity, 50)
-                          ),
-                          icon: FaIcon(FontAwesomeIcons.google, color: Colors.red),
-                          label: Text('Sign up with Google'),
-                          onPressed: () {
-                            final provider = Provider.of<GoogleSignInProvider>(context, listen: false);
-                            provider.googleLogin();
-                          },
                         ),
                         const SizedBox(
                           height: 10,

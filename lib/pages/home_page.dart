@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         backgroundColor: Theme.of(context).primaryColor,
         title: const Text(
-          "Groups",
+          "Travel across",
           style: TextStyle(
               color: Colors.white, fontWeight: FontWeight.bold, fontSize: 27),
         ),
@@ -183,7 +183,10 @@ class _HomePageState extends State<HomePage> {
       body: groupList(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          popUpDialog(context);
+          email == "admin@gmail.com" ?
+          popUpDialog(context)
+          :
+          "";
         },
         elevation: 0,
         backgroundColor: Theme.of(context).primaryColor,

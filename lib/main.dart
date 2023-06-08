@@ -1,12 +1,10 @@
 import 'package:chatapp_firebase/helper/helper_function.dart';
 import 'package:chatapp_firebase/pages/auth/login_page.dart';
 import 'package:chatapp_firebase/pages/home_page.dart';
-import 'package:chatapp_firebase/provider/google_sign_in.dart';
 import 'package:chatapp_firebase/shared/constants.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
-import 'package:provider/provider.dart';
 
 //SE-2110
 void main() async {
@@ -54,15 +52,12 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => GoogleSignInProvider(),
-      child: MaterialApp(
-        theme: ThemeData(
-            primaryColor: Constants().primaryColor,
-            scaffoldBackgroundColor: Colors.white),
-        debugShowCheckedModeBanner: false,
-        home: _isSignedIn ? const HomePage() : const LoginPage(),
-      ),
+    return MaterialApp(
+      theme: ThemeData(
+          primaryColor: Constants().primaryColor,
+          scaffoldBackgroundColor: Colors.white),
+      debugShowCheckedModeBanner: false,
+      home: _isSignedIn ? const HomePage() : const LoginPage(),
     );
   }
 }

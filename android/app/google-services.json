@@ -12,20 +12,7 @@
           "package_name": "com.example.chatapp_firebase"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "197301264686-d4ooli98q7obb3u0a42koq7sg1vn59ld.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.chatapp_firebase",
-            "certificate_hash": "386697e25dc1343a9cd954540e3fce04c40a426f"
-          }
-        },
-        {
-          "client_id": "197301264686-1kdg1lq6lihohjmqhlvgoovuc2sbsa98.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
           "current_key": "AIzaSyBohvg9D3ek6WKSDt0wFIyKkMuqDdfBsmU"

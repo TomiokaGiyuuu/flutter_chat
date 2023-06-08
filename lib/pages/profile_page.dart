@@ -122,7 +122,7 @@ class _ProfilePageState extends State<ProfilePage> {
         ],
       )),
       body: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 170),
+        padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
